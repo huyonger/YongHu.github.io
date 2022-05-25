@@ -377,3 +377,7 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+#kao_right{
+	 text-align:right;
+}
