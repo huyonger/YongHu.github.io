@@ -16,6 +16,7 @@ body {
 }
 
 #layout-menu {
+	background: #f6f6f6;
 	border: 1px solid #dddddd;
 	padding-top: 0.5em;
 	padding-left: 8px;
@@ -366,4 +367,14 @@ img {
 table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
+}
+
+.round_icon{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
