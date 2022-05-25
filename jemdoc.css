@@ -9,6 +9,10 @@ body {
 	font-family: Georgia, serif;
 	padding-bottom: 8px;
 	margin: 0;
+	margin-left: auto;
+  	margin-right: auto;
+  	padding-left:  50px;
+  	padding-right: 50px;
 }
 
 #layout-menu {
@@ -356,6 +360,7 @@ tr.heading {
 
 img {
     border: none;
+
 }
 
 table.imgtable, table.imgtable td {
