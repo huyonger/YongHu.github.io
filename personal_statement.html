@@ -56,11 +56,25 @@
     be analogous to the relationship between joint probability and conditional probability in probability statistics, and
     a discriminative model can be considered as a simple conditional generative model. Generative models can be applied not only
     to common discriminative tasks, but also to some challenging inverse problems and interesting generative tasks. Generative models
-    usually face three challenges: representation, learning and inference, which are coupled with each other. In order to generate
-    high quality and diverse samples, different models have different ideas on how to portray the data distribution, mainly including two types
-    of approaches, representing edge p.d.f or representing the sampling process, corresponding to probabilistic graphical model-based approaches
-    like Autoregressive model, Flow-based model, VAE, EBM andScore-based model, and GAN. There is still no model that can handle representation,
-    learning and inference well at the same time and I agree that in the future we will find more powerful generative models.
+    usually face three challenges: representation, learning and inference, which are coupled with each other. In order to generate high quality and diversity of samples,
+    accurate probability density estimates, and to obtain higher-order semantic features, Different models were proposed with different abilities of representation,
+    learning and inference, including fully observed likelihood-based models such as autoregressive models and flow-based models; latent variable models such as variational autoencoders;
+    implicit generative models such as GAN; energy-based models and score-based models. Fully observed likelihood-based models refer to
+    those models that can obtain tractable likelihood functions that can be estimated by MLE.
+    For example, autoregressive models introduce conditional independence through a probability graph model and increase the
+    expressiveness of the model by using neural networks to parameterize the conditional distribution function, which
+    eventually yields a compact representation of the target distribution and facilitates the calculation of the likelihood function
+    and the estimation of the maximum likelihood. However, higher log-likelihood doesn’t necessarily mean better looking samples.
+    The latent variable model supports unsupervised learning by introducing latent variables
+    and defines the target distribution representation flexibly leading to difficulty in maximum likelihood estimation, and usually
+    uses the technique of variational inference for optimization, which cannot obtain the exact likelihood.
+    The hidden generative model GAN is more concerned with the quality of the generated samples and learns through a
+    two-sample test objective function, where the generator is used to minimize the distance from the target distribution
+    and the discriminator is used to tighten the lower bound of the function. These models have their own advantages and disadvantages
+    in different tasks, and how to solve their respective pain points is what needs to be studied in the future.
+    Also, how to optimize the generative model better theoretically and ensure its generalization ability is an important research direction.
+
+Translated with www.DeepL.com/Translator (free version)
 </p>
 <p>
     To sum up, I want to get my PhD in order to pursue an interesting and challenging career in
