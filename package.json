@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "upload-file-cos": "^1.0.3"
+  },
+  "scripts": {
+    "upload": "upload-file-cos"
+  },
+  "pre-commit": [
+    "upload"
+  ],
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
+  }
+}
